@@ -76,3 +76,19 @@ def write_csv(data, path, header=None):
         if header:
             writer.writerow(header)
         writer.writerows(data)
+
+def read_tsv_dict(path):
+    data = []
+    with open(path, "r") as f:
+        reader = csv.DictReader(f, delimiter="\t")
+        for line in reader:
+            data.append(line)
+    return data
+
+def read_tsv(path):
+    data = []
+    with open(path, "r") as f:
+        reader = csv.reader(f, delimiter="\t")
+        for line in reader:
+            data.append(line)
+    return data

@@ -1,3 +1,8 @@
+'''
+Basic code to evaluate LMs using the minicons package
+in a setting with a good vs a bad sentence.
+'''
+
 import argparse
 import utils
 import pathlib
