@@ -1,7 +1,7 @@
 import utils
 import re
 
-lgd_raw = utils.read_tsv("data/lgd-attractors/lgd_dataset.tsv")
+lgd_raw = utils.read_tsv("data/lgd-attractors/lgd_dataset-sampled.tsv")
 
 
 def preprocess(sentence):
